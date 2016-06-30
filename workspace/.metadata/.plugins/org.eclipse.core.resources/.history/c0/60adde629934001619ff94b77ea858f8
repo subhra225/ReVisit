@@ -1,0 +1,51 @@
+package coreJavaTraining;
+
+public class AustralianTraffic implements CentralTraffic,ContinentalTraffic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CentralTraffic ct =new AustralianTraffic();
+		
+	    ct.redStop();
+		ct.greenGo();
+		ct.flashYellow();
+		AustralianTraffic at= new AustralianTraffic();
+		at.this_is_specific_to_AustralianClass();
+		
+		ContinentalTraffic cot=new AustralianTraffic();
+		System.out.println(cot.timer());
+		}
+	
+	public void  this_is_specific_to_AustralianClass()
+	{
+		System.out.println("walk when the signal becomes green");
+	}
+
+
+	@Override
+	public void greenGo() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Wait for 90 seconds");
+	}
+
+	@Override
+	public void redStop() {
+		// TODO Auto-generated method stub
+		System.out.println("Wait for 120 seconds");
+	}
+
+	@Override
+	public void flashYellow() {
+		// TODO Auto-generated method stub
+		System.out.println("Wait for 10 seconds");
+		
+	}
+
+	@Override
+	public int timer() {
+		// TODO Auto-generated method stub
+		return 22;
+	}
+
+}

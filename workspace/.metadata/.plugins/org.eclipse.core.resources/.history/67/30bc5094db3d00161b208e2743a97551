@@ -1,0 +1,32 @@
+package popup;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class AjaxCalls {
+
+	public static void main(String[] args)
+{
+		// TODO Auto-generated method stub
+		
+		/**
+		 * This program is written to test Ajax Calls
+		 */
+		
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http://www.manipalprolearn.com/");
+		driver.findElement(By.id("edit-search-block-form--2")).sendKeys("management");
+		
+		WebDriverWait wait = new WebDriverWait(driver, /*seconds=*/3); 
+		//WebElement element = wait.until(driver.findElement(By.xpath("//span[text()='Big']")));
+		
+		
+		
+		
+
+	}
+
+}

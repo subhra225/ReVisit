@@ -1,0 +1,8 @@
+package coreJavaTraining;
+
+public interface CentralTraffic 
+
+{
+	
+
+}

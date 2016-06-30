@@ -1,0 +1,17 @@
+package popup;
+
+public class AjaxCalls {
+
+	public static void main(String[] args)
+{
+		// TODO Auto-generated method stub
+		
+		/**
+		 * This program is written to test Ajax Calls
+		 */
+		
+		
+
+	}
+
+}

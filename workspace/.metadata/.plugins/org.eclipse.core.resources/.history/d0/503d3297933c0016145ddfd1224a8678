@@ -1,0 +1,21 @@
+package popup;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class PopupPractice {
+
+	public static void main(String[] args) 
+	{
+		/**
+		 * This program is written in order to test the windows
+		 * alert popup
+		 */
+		
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http://demo.actitime.com/login.do");
+
+	}
+	
+
+}

@@ -1,0 +1,27 @@
+package coreJavaTraining;
+
+public class InheritanceChildClass extends InheritanceParentClass 
+{
+	public void engine()
+	{
+		System.out.println("new engine");
+	}
+	
+	public void color(){
+		System.out.println(color);
+	}
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		InheritanceChildClass cc=new InheritanceChildClass();
+		
+		cc.color();
+		cc.brakes();
+		
+		cc.audioSystem();
+		
+
+	}
+
+}

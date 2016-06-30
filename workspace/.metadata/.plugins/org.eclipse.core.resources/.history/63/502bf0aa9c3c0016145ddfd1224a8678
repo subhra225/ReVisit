@@ -1,0 +1,38 @@
+package popup;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+
+public class PopupPractice {
+
+	public static void main(String[] args) 
+	{
+		/**
+		 * This program is written in order to test the windows
+		 * alert popup
+		 */
+		
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http://demo.actitime.com/login.do");
+		driver.findElement(By.name("username")).sendKeys("admin");
+		driver.findElement(By.name("pwd")).sendKeys("manager");
+		driver.findElement(By.xpath("//div[text()='Login ']")).click();
+		try {
+			Thread.sleep(20000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.findElement(By.xpath("//div[text()='TASKS']")).click();
+		driver.findElement(By.cssSelector("css=input[value='17']")).click();
+		
+
+	}
+	
+
+}

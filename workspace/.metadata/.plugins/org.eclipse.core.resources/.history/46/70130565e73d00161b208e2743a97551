@@ -1,0 +1,17 @@
+package coreJavaTraining;
+
+public class Constructor {
+	
+	int id;
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		
+		Constructor c1=new Constructor();
+		
+		System.out.println(c1.id);
+
+	}
+
+}
